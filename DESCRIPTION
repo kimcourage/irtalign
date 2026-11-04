@@ -1,0 +1,37 @@
+Package: irtalign
+Type: Package
+Title: Alignment Optimization for Multiple-Group Item Response Models
+Version: 0.0.0.9000
+Authors@R:
+    person("Yonggi", "Kim", email = "yonggi1124@gmail.com",
+           role = c("aut", "cre"))
+Description: Estimates group-specific latent means and variances across many
+    groups without exact measurement invariance, using the alignment
+    optimization method of Asparouhov and Muthen (2014)
+    <doi:10.1080/10705511.2014.919210> and its item response theory
+    application (Muthen and Asparouhov, 2014) <doi:10.3389/fpsyg.2014.00978>.
+    Dichotomous (2PL, 3PL) and polytomous (graded response and generalized
+    partial credit) items can be mixed in one analysis. Provides standard
+    errors by implicit differentiation, parameter-by-group noninvariance
+    detection, invariance R-squared, simplicity function contributions and
+    factor mean comparisons. Group-specific models are estimated with 'mirt'
+    (Chalmers, 2012) <doi:10.18637/jss.v048.i06>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends:
+    R (>= 4.1.0)
+Imports:
+    mirt (>= 1.40),
+    Rcpp,
+    stats,
+    utils
+LinkingTo:
+    Rcpp
+Suggests:
+    sirt,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Roxygen: list(markdown = TRUE)
+URL: https://github.com/kimcourage/irtalign
+BugReports: https://github.com/kimcourage/irtalign/issues
+Config/roxygen2/version: 8.1.1
