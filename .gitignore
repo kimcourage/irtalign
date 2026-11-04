@@ -1,0 +1,13 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+*.Rcheck/
+irtalign_*.tar.gz
+src/*.o
+src/*.so
+src/*.dll
+inst/doc
+docs/
+admin/
